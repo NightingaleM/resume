@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #ccc;
+	margin: 0;
+}
+.layout{
+	width: 1000px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 0;
+}
+header:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+header,
+.fbody,
+.sbody,
+footer {
+	padding: 0;
+	margin: 0;
+}
+header{
+	padding: 0 50px;
+	padding-top: 40px;
+}
+.headleft {
+	float: left;
+	width: 50%;
+}
+
+.headright {
+	float: left;
+	width: 50%;
+}
+
+.logo {
+	color: #000;
+	border: 10px solid #000;
+	font-size: 40px;
+	/*background: black;*/
+	border-radius: 50%;
+	width: 160px;
+	height: 160px;
+	position: relative;
+	float: left;
+}
+.logo>span:nth-child(1) {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+.logo>span:nth-child(2) {
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+
+}
+/*.logo:before {
+    content: '';
+    width: 150px;
+    height: 150;
+    border-radius: 50%;
+    background-color: #ccc;
+    position: absolute;
+}*/
+.logo:after {
+	content: '';
+	width: 90px;
+	border-top: 3px solid #000;
+	position: absolute;
+	top: 67px;
+	left: 26px;
+	transform: rotateZ(130deg);
+}
+.headleft .name {
+	float: left;
+	padding-left: 20px;
+}
+.headright h2 {
+	width: auto;
+	border-bottom: 5px solid;
+	margin-bottom: 0;
+}
+.headright p {
+	margin: 0;
+	margin-bottom: 10px;
+}
+.headright span{
+	font-weight: bold;
+}
+.fbody,
+.sbody,
+footer {
+	padding-left: 50px;
+}
+.fbody h2 {
+	width: 400px;
+	border-bottom: 1px solid #ccc;
+	margin-left: -10px;
+}
+.sbody h2{
+	width: 400px;
+	border-bottom: 1px solid #ccc;
+	margin-left: -10px;
+}
+footer h3{
+	width: 400px;
+	border-bottom: 1px solid #ccc;
+}
+.work,
+.education {
+	position: relative;
+	padding-left: 70px;
+	border-left: 2px solid;
+}
+.dot,
+.ddot {
+	position: relative;
+}
+.lightword {
+	font-size: 18px;
+	color: #c1c1c1;
+}
+.fbody h3 {
+	display: inline;
+}
+.sbody h3{
+	display: inline;
+}
+.dot:after {
+	content: '';
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	left: -76px;
+	width: 10px;
+	height: 10px;
+	background-color: black;
+	display: inline-block;
+}
+footer:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.footleft{
+	width: 50%;
+	float: left;
+	padding: 5px;
+}
+.footright {
+	width: 50%;
+	padding: 5px;
+	float: left;
+}
+.ddot{
+	padding-left: 70px;
+}
+.ddot:after{
+	content: '+';
+	display: inline-block;
+	font-weight: bold;
+	position: absolute;
+	top: 0;
+	left: 10px;
+}
+.ddot:before{
+	content: '';
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 1px solid;
+	display: inline-block;
+	position: absolute;
+	top: 1px;
+	left: 5px;
+}
+.ddotfloat{
+	float: left;
+	width: 50%;
+}
+.ddotfloat p{
+	margin: 0;
+	margin-bottom: 55px;
+}
+	</style>
+</head>
+<body>
+	<div class="layout">
+		 <header>
+		 	<div class="headleft">
+		 		<div class="logo">
+		 			<span>O</span>
+		 			<span>Y</span>
+		 		</div>
+		 		<div class="name">
+		 			<h1>欧阳润驰</h1>
+		 			<p>应聘前端工程师</p>
+		 		</div>
+		 	</div>
+		 	<div class="headright">
+		 		<h2>个人信息</h2>
+		 		<p><span>年龄:</span>21 </p>
+		 		<p><span>联系电话:</span>18773215181</p>
+		 		<p><span>Email:</span>oy_runchi@qq.com</p>
+		 		<p><span>个人主页:</span>WWW.还没得.net</p>
+		 	</div>
+		 </header>
+		 <div class="fbody">
+		 	<h2>工作经验</h2>
+		 	<div class="work">
+		 		<div class="dot">
+		 			<h3>湖南知音装饰集团/</h3>
+		 			<span class="lightword">2015年2/7月</span>
+		 			<p>维护公司微信公众号，对公司微信工作号的用户回复进行统计、整理。</p>
+		 		</div>
+		 		<div class="dot">
+		 			<h3>Apple Inc/</h3>
+		 			<span class="lightword">20xx-20xx</span>
+		 			<p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+		 		</div>
+		 		<div class="dot">
+		 			<h3>A thousand Years/</h3>
+		 			<span class="lightword">Christina Perri</span>
+		 			<p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+		 		</div>
+		 	</div>
+		 </div>
+		 <div class="sbody">
+		 	<h2>学习经历</h2>
+		 	<div class="education">
+		 		<div class="dot">
+		 			<h3>湖南工程学院/</h3>
+		 			<span class="lightword">2013/2017</span>
+					<p class="lightword">电气工程及其自动化</p>
+		 			<p>学习并熟悉CAD、Arduino单片机、LabView、Proteus 以及 Word等常用办公软件。</p>
+		 		</div>
+		 		<div class="dot">
+		 			<h3>Sing When you/</h3>
+		 			<span class="lightword">Robbie Williams</span>
+		 			<p class="lightword">Information System</p>
+		 			<p>Once U've found that lover you're homeward bound.Love is all around. Send someone to love me. I nedd to rest in arms.</p>
+		 		</div>
+		 	</div>
+		 </div>
+		 <footer>
+		 	<div class="footleft">
+		 		<h3>社团活动</h3>
+		 		<div class="ddot">
+		 		<p>Volunteer</p>
+		 		<p>Claritas est etiam processus dynamicus, quisequitur mutationem consuetudium lectorum.</p>
+		 		</div>
+		 		<div class="ddot">
+		 		<p>Volunteer</p>
+		 		<p>Claritas est etiam processus dynamicus, quisequitur mutationem consuetudium lectorum.</p>
+		 		</div>
+		 	</div>
+		 	<div class="footright">
+		 		<h3>工作技能</h3>
+		 		<div class="ddotfloat">
+		 		<p class="ddot">HTML CSS</p>
+		 		<p class="ddot">JQUERY</p>
+		 		<p class="ddot">JAVASCRIPT</p>
+		 			
+		 		</div>
+		 		<div class="ddotfloat">
+		 		<p class="ddot">SLIM</p>
+		 		<p class="ddot">PHOTOSHOP</p>
+		 		<p class="ddot">ILLUSTRATOR</p>
+		 			
+		 		</div>
+		 	</div>
+		 </footer>
+	
+	</div>
+</body>
+</html>
