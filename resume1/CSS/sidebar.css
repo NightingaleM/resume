@@ -1,0 +1,96 @@
+*{margin:0; padding: 0; box-sizing: border-box;}
+
+@font-face {
+  font-family: 'iconfont';  /* project id 365335 */
+  src: url('http://at.alicdn.com/t/font_lp9z36yyyg9442t9.eot');
+  src: url('http://at.alicdn.com/t/font_lp9z36yyyg9442t9.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_lp9z36yyyg9442t9.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_lp9z36yyyg9442t9.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_lp9z36yyyg9442t9.svg#iconfont') format('svg');
+}
+
+#layout{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  font-size: 100%;
+  /* display: flex; */
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  min-width: 280px;
+  min-height: 600px;
+  background-color: #336666;
+  color: #CC9933;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  padding: 10px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.name a {
+  text-decoration: none;
+  color: #CC9933;
+  font-family: '黑体','微软雅黑';
+  font-size: 40px;
+}
+
+#navigation {
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+#navigation .navigation-ul {
+  font-family: '微软雅黑';
+  font-weight: bolder;
+  list-style: none;
+}
+
+#navigation .navigation-ul .navigation-li {
+  transition: all 150ms ease-in;
+  font-size: 18px;
+  color: #fff;
+  margin: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#navigation .navigation-ul .navigation-li:hover {
+  color: lightblue;
+
+}
+#navigation .navigation-ul .active-li {
+  color: lightgreen;
+}
+#footer {
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.footer-socials {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-around;
+}
+#footer .socials {
+  font-family: iconfont;
+  font-size: 35px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 200ms ease-out;
+}
+
+#footer .socials:hover {
+  color: lightcoral;
+}
