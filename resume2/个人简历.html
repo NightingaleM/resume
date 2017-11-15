@@ -12,6 +12,7 @@
 		body {
 			background-color: #ccc;
 			margin: 0;
+			line-height: 1.5;
 		}
 
 		.layout {
@@ -46,7 +47,8 @@
 		}
 
 		header {
-			padding: 3px 50px;
+			padding: 5px 50px;
+			margin-bottom: 20px;
 		}
 
 		.headleft {
@@ -101,7 +103,7 @@
 		.headright h2 {
 			width: auto;
 			border-bottom: 5px solid;
-			margin-bottom: 0;
+			margin-bottom: 10px;
 		}
 
 		.headright p {
@@ -113,23 +115,16 @@
 			font-weight: bold;
 		}
 
-		.fbody,
 		.sbody,
 		footer {
-			padding: 0 50px;
+			padding: 10px 50px;
 			padding-right: 100px;
 		}
-
-		.fbody h2 {
-			width: 400px;
-			border-bottom: 1px solid #ccc;
-			margin-left: -10px;
-		}
-
 		.sbody h2 {
 			width: 400px;
 			border-bottom: 1px solid #ccc;
 			margin-left: -10px;
+			margin-bottom: 15px;
 		}
 
 		footer h3 {
@@ -148,7 +143,10 @@
 		.ddot {
 			position: relative;
 		}
-
+		.teacher {
+			margin-bottom: 5px;
+			border-bottom: 1px solid #c1c1c1;
+		}
 		.lightword {
 			font-size: 18px;
 			color: #c1c1c1;
@@ -245,15 +243,15 @@
 				</div>
 				<div class="name">
 					<h1>欧阳润驰</h1>
-					<p>应聘前端工程师</p>
+					<p>应聘前端开发工程师</p>
 				</div>
 			</div>
 			<div class="headright">
 				<h2>个人信息</h2>
-				<p><span>年龄:</span>22</p>
-				<p><span>联系电话:</span>18617048281</p>
-				<p><span>Email:</span>oy_runchi@qq.com</p>
-				<p><span>个人主页:</span>oylz.site</p>
+				<p><span>年龄:</span> 22</p>
+				<p><span>联系电话:</span> 18617048281</p>
+				<p><span>Email:</span> oy_runchi@qq.com</p>
+				<p><span>个人主页:</span> oylz.site</p>
 			</div>
 		</header>
 		<div class="sbody">
@@ -267,13 +265,72 @@
 							<dt>意向城市：</dt>
 							<dd>深圳，广州，上海</dd>
 							<dt>期望月薪：</dt>
-							<dd>6000~8000</dd>
+							<dd>4000~5000</dd>
 							<dt>期望行业：</dt>
 							<dd>不限</dd>
 						</dl>
 					</div>
 				</div>
-
+			</div>
+		</div>
+		<div class="sbody">
+			<h2>项目经验</h2>
+			<div class="work">
+				<div class="dot teacher">
+					<h3>教师网站开发/</h3>
+					<span class="lightword">2017年11月—</span>
+					<div>
+						<dl>
+							<dt>使用工具：</dt>
+							<dd>VsCode,node.js,Git Bash</dd>
+							<dt>使用模块/库：</dt>
+							<dd>Vue,Vue-cli,Vue-router,axios,WebPack,Sequelize等</dd>
+							<dt>GitHub地址：</dt>
+							<dd><a href="https://github.com/NightingaleM/teacherHe">github.com/NightingaleM</a></dd>
+							<dt>项目描述：</dt>
+							<dd>一个教师的个人网站。实现记录文章、上传学生图片等功能。</dd>
+							<dt>项目难点：</dt>
+							<dd>
+								<ol>
+									<li>将Vue-cli搭建的单页面应用改为多页面应用。</li>
+									<li>用户在线上页面使用markdown后转为HTML保存到数据库。</li>
+								</ol>
+							</dd>
+							<dt>主要责任：</dt>
+							<dd>&nbsp;&nbsp;&nbsp;&nbsp;解读客户需求，将需求分离为不同模块，逐一解决。使用Vue-cli+Webpack搭建一个Vue开发环境，
+								同时修改打包文件，使原来的单页面应用变为多页面应用。
+								<br />&nbsp;&nbsp;&nbsp;&nbsp;通过分析需求，将相同需求写在同一组件中，
+								在父组件中通过prop来使得同一组件微调得到不同效果。通过mavon-editor组件实现线上使用markdown
+								编写，再通过ajax技术将编写内容发送至后台进行数据保存。
+								<br />&nbsp;&nbsp;&nbsp;&nbsp;使用Express搭建一个简单的后端结构，
+								使用Sequelize在后端建立数个数据库用于储存文章或图片。使用Git进行代码版本管理。</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="dot">
+					<h3>个人网站开发/</h3>
+					<span class="lightword">2017年8—9月</span>
+					<div>
+						<dl>
+							<dt>使用工具：</dt>
+							<dd>VsCode,node.js,Git Bash</dd>
+							<dt>使用模块：</dt>
+							<dd>Express,WebPack,Sequelize,Sqlite3等</dd>
+							<dt>项目地址：</dt>
+							<dd><a href="http://oylz.site">oylz.site</a></dd>
+							<dt>项目描述：</dt>
+							<dd>一个个人网站，实现留言效果。</dd>
+							<dt>项目难点：</dt>
+							<dd>
+								制作fullpage效果时在不同浏览器有不同表现，需要对其进行兼容性优化。
+							</dd>
+							<dt>主要责任：</dt>
+							<dd>&nbsp;&nbsp;&nbsp;&nbsp;使用Express搭建一个传统的开发框架，使用nodejs作为后端语言，使用jQuery库、less等前端框架或工具。
+								<br />&nbsp;&nbsp;&nbsp;&nbsp;前端代码进行模块化编辑，遵循CommouJs规范，使用WebPack进行打包。后端使用nodejs连接sqlite数据库，
+								为游客留言提供一个存储库。使用git进行版本管理以及上传。</dd>
+						</dl>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="sbody">
@@ -281,41 +338,30 @@
 			<div class="education">
 				<div class="dot">
 					<h3>湖南工程学院/</h3>
-					<span class="lightword">2013~2017</span>
+					<span class="lightword">2013年—2017年</span>
 					<p class="lightword">电气工程及其自动化</p>
 					<p>学习并熟悉CAD、Arduino单片机、LabView、Proteus，以及 Word等常用办公软件。</p>
 				</div>
 			</div>
 		</div>
-		<div class="fbody">
-			<h2>项目经验</h2>
-			<div class="work">
+		<div class="sbody">
+			<h2>实习经历</h2>
+			<div class="education">
 				<div class="dot">
-					<h3>个人网站开发/</h3>
-					<span class="lightword">2017年8~9月</span>
-					<div>
-						<dl>
-							<dt>使用工具：</dt>
-							<dd>VsCode,nodejs,gitBash</dd>
-							<dt>使用模块：</dt>
-							<dd>Express,WebPack,Sequelize,Sqlite3等</dd>
-							<dt>项目地址：</dt>
-							<dd><a href="http://oylz.site">oylz.site</a></dd>
-							<dt>项目简介：</dt>
-							<dd>使用Express搭建一个开发框架，使用Webpack将模块化的代码进行打包。使用Sqlite3为网站的留言提供一个简单的数据库。使用gitBash将代码上传到GitHub，再在服务器上clone下来，并使用pm2保持项目持续运行。</dd>
-						</dl>
-					</div>
+					<h3>湖南知音装饰公司/</h3>
+					<span class="lightword">2016年7月—2016年9月</span>
+					<p class="lightword">微信开发以及活动页面制作</p>
+					<p>
+						两个月的静态页面制作经验。
+						协助网络部人员进行微信平台开发以及推广，在公司活动期间制作活动单页面网页。
+					</p>
 				</div>
-				<!-- 		 		<div class="dot">
-		 			<h3>Apple Inc/</h3>
-		 			<span class="lightword">20xx-20xx</span>
-		 			<p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-		 		</div> -->
 			</div>
 		</div>
 
+
 		<div class="sbody">
-			<h2>学习经历</h2>
+			<h2>具备技能</h2>
 			<div class="education">
 				<div class="dot">
 					<h3>通用技能/</h3>
@@ -328,14 +374,20 @@
 					<span class="lightword">————</span>
 					<div>
 						<dl>
-							<dt>静态页面:</dt>
-							<dd>熟练使用HTML\CSS，百分百还原设计稿，像素级页面制作能力</dd>
-							<dt>动态页面:</dt>
-							<dd>熟悉Ajax，Jsonp等技术，了解前后端分离开发模式</dd>
-							<dt>移动端页面</dt>
+							<dt>静态页面：</dt>
+							<dd>
+								熟悉W3C规范，可使用HTML 5、CSS 3 以及 jQuery库 像素及还原静态页面。
+								<br />了解Photoshop等工具，具备一定的切图技能。
+							</dd>
+							<dt>动态页面：</dt>
+							<dd>熟悉Ajax，Jsonp等技术，了解前后端分离开发模式，可以与后端配合开发动态页面。
+								<br />了解 CommonJS、AMD 的模块化方案。</dd>
+							<dt>移动端页面：</dt>
 							<dd>了解CSS3、HTML5以及响应式布局</dd>
-							<dt>前端框架\工具</dt>
-							<dd>了解jQuery.js、Vue.js、Bootsrop 基本原理，能使用前端框架开发富交互应用</dd>
+							<dt>前端框架\工具：</dt>
+							<dd>了解jQuery.js、Vue.js、Bootsrop 基本原理，能使用前端框架开发富交互应用。
+								<br />了解部分Linux命令。
+							</dd>
 						</dl>
 					</div>
 				</div>
